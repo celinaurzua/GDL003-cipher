@@ -2,12 +2,41 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Cipher Cesar</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root">
-      <h1>Hola mundo!</h1>
+      <div id="header">
+        <h1>&#x1F54A; Bubba Gump Encoder &#x1F30E;</h1>
+        <p>Bienvenidos a la herramienta de mensajería interna para zonas de conflicto</p>
+      </div>
+      <div id="content">
+    
+        <div class='plaintext'>
+          <h3>Mensaje simple</h3>
+          <p>- Tu mensaje simple -</p>
+          <textarea id='plaintext' rows="4" cols="50">
+          </textarea>
+    
+          <h3>Elige desplazamiento: </h3>
+          <div>
+            <input class="shift-l" type="number" min="0" max="25" step="1" value="3" />
+            <button class='boton-encriptar'>Encriptar!</button>
+          </div>
+        </div>
+        <div class='cipher'>
+          <h3>Mensaje encriptado</h3>
+          <p>- Tu mensaje encriptado -</p>
+          <textarea id='ciphertext' rows="4" cols="50">
+          </textarea>
+    
+          <h3>Elige desplazamiento: </h3>
+          <div>
+            <input class="shift-r" type="number" min="0" max="25" step="1" value="3" />
+            <button class='boton-desencriptar'>Desencriptar!</button>
+          </div>
+
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
