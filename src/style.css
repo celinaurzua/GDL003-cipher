@@ -1,22 +1,20 @@
-@import "compass";
-@import "color-schemer"; 
-/* Colores */
-$grey: #333;
-$offwhite: #EEE;
-$caesar-red: #A52B2B;
-/* Fuentes */
-$ubuntu: 'Ubuntu Mono';
-$caesar: 'Julius Sans One', sans-serif;
 body {
-  font-family: $caesar;
-  background: $caesar-red;
+  font-family: ubuntu;
+  background: caesar-red;
   text-align: center; 
-  color: $offwhite;
+  color: offwhite;
+  ubuntu: 'Ubuntu Mono';
+  caesar: 'Julius Sans One', sans-serif;
+  grey: #333;
+  offwhite: #EEE;
+  caesar-red: #A52B2B;
+  }
   h1 {letter-spacing: 0.25em;}
   h2 {margin-top: -15px;}
   p {margin-top: -10px;}
+  
   textarea { 
-    padding:5px; border:2px solid $grey; 
+    padding:5px; border:2px solid grey; 
     -webkit-border-radius: 5px;
     border-radius: 5px;
     width: 350px; 
@@ -27,40 +25,41 @@ body {
     max-height:100px;
     font-size: 1.2em;
     font-family: 'Ubuntu Mono';
-    color: $grey;
-    background-color: $offwhite;
+    color: grey;
+    background-color: offwhite;
   }
   button {
     display: inline;
-    padding:5px; border:2px solid $grey; 
+    padding:5px; border:2px solid grey; 
     -webkit-border-radius: 5px;
     border-radius: 5px;
     font-size: 1.2em;
-    font-family: $ubuntu;
+    font-family: ubuntu;
     margin-left: 5px;
     margin-right: 80px;
-    height: 32px;
+    height:32px;
   }
-  #header {
+  header {
     margin-top: -10px;
     margin-left: 15%;
     margin-right:15%;
-    /*background-color: #333;*/
-    padding:5px; border:0px solid $grey; 
+    background-color: 333;
+    padding:5px; border:0px solid grey; 
     -webkit-border-radius: 5px;
     border-radius: 5px;
   }
-  #content {
+  content {
     text-align: center;
     display:block;
+  }
     .plaintext {
       display: inline-block;
     }
     .cipher {
       display: inline-block;
     }
-  }
-  #footer {
+  
+  footer {
     float: center;
     margin-left: 10px;
     margin-top: 35px;
@@ -71,10 +70,12 @@ body {
     margin-left:80px;
     width: 65px;
     height: 20px;
-    padding:5px; border:2px solid $grey; 
+    padding:5px; border:2px solid grey; 
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    font-family: $ubuntu;
+    font-family: ubuntu;
     font-size: 1.2em;
   }
-}
+
+
+
