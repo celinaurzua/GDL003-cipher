@@ -1,6 +1,6 @@
 body {
-  font-family: ubuntu;
-  background: caesar-red;
+  font-family: Geneva, Tahoma, sans-serif;
+  background: #A52B2B;
   text-align: center; 
   color: offwhite;
   ubuntu: 'Ubuntu Mono';
@@ -10,8 +10,8 @@ body {
   caesar-red: #A52B2B;
   }
   h1 {letter-spacing: 0.25em;}
-  h2 {margin-top: -15px;}
-  p {margin-top: -10px;}
+  h2 {margin-top: -1px;}
+  p {margin-top: -1px;}
   
   textarea { 
     padding:5px; border:2px solid grey; 

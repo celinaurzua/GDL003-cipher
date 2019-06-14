@@ -1,21 +1,25 @@
-//evento para cifrar boton de encriptado
-('.btn-encrypt').click - >
-shift = ('.shift-l').val() % 26
-text = ('plaintext').val()
-cipher = text.caesarShift shift('ciphertext').val cipher
-return
+  //llamar botones
+let codificar = document.getElementById ("btn-encrypt");
+let decodificar = document.getElementById ("btn-decrypt");
 
-//evento para boton desencriptado
-('.btn-decrypt').click 
-shift = ('.shift-r').val() % 26
-text = ('ciphertext').val()
-plaintext = text.caesarShift - shift('plaintext').val plaintext
-return
+//evento a botones
+codificar .addEventListener ("click", () => {
+    let m = document.getElementById ("plaintext").value;
+    let offset = parseInt (document.getElementById ("shift-l") .value);
+    let codificanda = window.cipher.encode (offset,m);
+    document.getElementById ("ciphertext").innerHTML = codificanda;
+    document.getElementById ("plainttext").value = "";
 
-('.shift-r').change - >
-shift = ('.shift-r').val() % 26
-text = ('ciphertext').val()
-plaintext = text.caesarShift - shift
-('plaintext').val plaintext
-return
+});
+
+decodificar .addEventListener ("click", () => {
+    let m = document.getElementById ("ciphertext").value;
+    let offset = parseInt (document.getElementById ("shift-r") .value);
+    let decodificanda = window.cipher.decode (offset,m);
+    document.getElementById ("ciphertext").innerHTML = decodificanda;
+    
+});   
+
+
+
 

@@ -1,18 +1,46 @@
 window.cipher = {
-  //formula encriptado cesar  
-  String: caesarShift = (shift) - >
-  result = ''
-i = 0
-while i < length
-c = charCodeAt i
-if c >= 65 and c <= 90
-result += charsUP[(c - 65 + shift) % 26]
-else if c >= 97 and c <= 122
-result += charsDN[(c - 97 + shift) % 26]
-else
-  result += charAt i;
-i++
-result
+   //función cifrado
+  encode: (offset,m) => {
+   let result = ""; 
 
-// ... 
+     for (let i = 0; i < m.length; i++) {
+      let letter = m.charCodeAt (i);
+      if (letter >= 65 && letter <= 90) {
+      result += String.fromCharCode(((letter -65 + offset) % 26) + 65);
+      } else if (letter >= 97 && letter <= 122){  
+      result += String.fromCharCode(((letter - 97 + offset) %26) +97);
 
+      } else{ result += String.fromCharCode ( letter);
+
+      }
+
+     //fórmula de conversión mayúsculas
+     
+     
+
+     //fórmula minúsculas
+     
+     
+    }
+    return result;
+  },
+
+  decode: (offset,m) => {
+    let result = ""; 
+ 
+      for (let i = 0; i < m.length; i++) {
+      let letter = m.charCodeAt (i);
+       if (letter >= 65 && letter <= 90) {
+       result += String.fromCharCode(((letter + 65 - offset) % 26) + 65);
+       } else if (letter >= 97 && letter <= 122){  
+       result += String.fromCharCode(((letter - 122 - offset) %26) +122);
+ 
+       } else{ result += String.fromCharCode ( letter);
+       }
+       }
+
+       return result;
+
+      }
+
+};
