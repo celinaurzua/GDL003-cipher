@@ -14,14 +14,7 @@ window.cipher = {
 
       }
 
-     //fórmula de conversión mayúsculas
-     
-     
-
-     //fórmula minúsculas
-     
-     
-    }
+     }
     return result;
   },
 

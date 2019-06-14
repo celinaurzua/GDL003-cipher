@@ -1,8 +1,8 @@
-  //llamar botones
+  //llamado botones
 let codificar = document.getElementById ("btn-encrypt");
 let decodificar = document.getElementById ("btn-decrypt");
 
-//evento a botones
+//evento botones
 codificar .addEventListener ("click", () => {
     let m = document.getElementById ("plaintext").value;
     let offset = parseInt (document.getElementById ("shift-l") .value);
